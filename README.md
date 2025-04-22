@@ -1,7 +1,7 @@
 
 # MLWE-PAKE Implementation
 
-This project is a demonstration of a Password-Authenticated Key Exchange (PAKE) protocol using the Module Learning With Errors (MLWE) cryptographic primitive. It is designed for educational purposes and should not be used in production environments.
+This project is a demonstration of a Password-Authenticated Key Exchange (PAKE) protocol using the Module Learning With Errors (MLWE) cryptographic primitive.
 
 ## Overview
 
