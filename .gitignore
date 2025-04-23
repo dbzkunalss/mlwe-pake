@@ -111,3 +111,7 @@ include/
 
 # liboqs library
 liboqs/ 
+
+#assets
+*.dot
+*.png

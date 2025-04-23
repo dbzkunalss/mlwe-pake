@@ -92,9 +92,13 @@ def process_client_message1(message_bytes, server_id, server_sk, expected_passwo
             "ciphertext_sc": base64.b64encode(ciphertext_sc).decode('utf-8'),
         }
 
-        # Keep server context for later use
+        # Derive shared_secret_cs on the server side
+        ciphertext_cs, shared_secret_cs = kem_encapsulate(client_pk)
+
+        # Update server context to include shared_secret_cs
         server_context = {
-            "shared_secret_sc": shared_secret_sc
+            "shared_secret_sc": shared_secret_sc,
+            "shared_secret_cs": shared_secret_cs
         }
 
         return response, server_context, [message_bytes, json.dumps(response, sort_keys=True).encode('utf-8')]
