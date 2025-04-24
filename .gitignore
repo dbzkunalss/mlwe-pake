@@ -114,4 +114,4 @@ liboqs/
 
 #assets
 *.dot
-*.png
+# *.png
